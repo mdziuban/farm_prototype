@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '/')));
 app.get('/', (req, res) => {
 res.sendFile(path.join(__dirname, + '/index.html'));
 })
-// Create the server and listen on port
+
 http.createServer(app).listen(port, () => {
 console.log(`Server running on localhost:${port}`);
 });
